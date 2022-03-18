@@ -15,6 +15,11 @@
 }
 
 /* #region Commons */
+
+img {
+    max-width: 100%;
+}
+
 /* #endregion Commons */
 
 /* #region Utility */
@@ -28,7 +33,7 @@
 
 .debug .logo_sony {
     background-color: var(--bg-darkest);
-    height: 30px;
+    height: 40px;
 }
 
 .debug #site_navbar {
@@ -42,7 +47,7 @@
 }
 
 .debug .show1 {
-    height: 100px;
+    height: 120px;
     border: 1px solid white;
 }
 
@@ -161,6 +166,11 @@
 /* #endregion Header */
 
 /* #region Main*/
+
+.border_radius {
+    border-radius: 2rem;
+}
+
 /* #endregion Main */
 
 /* #region Footer */
