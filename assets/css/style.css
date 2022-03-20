@@ -16,13 +16,20 @@
 
 /* #region Commons */
 
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 img {
     max-width: 100%;
 }
 
+
+
 /* #endregion Commons */
 
 /* #region Utility */
+
 /* #endregion Utility */
 
 /* #region Debug */
@@ -38,7 +45,7 @@ img {
 
 .debug #site_navbar {
     background-color: var(--bg-light);
-    height: 60px;
+    height: 70px;
 }
 
 .debug .m-jumbotron {
@@ -51,10 +58,10 @@ img {
     border: 1px solid white;
 }
 
-.debug .show2 {
+/* .debug .show2 {
     height: 200px;
     background-color: blue;
-}
+} */
 
 .debug .show3 {
     height: 950px;
@@ -161,6 +168,26 @@ img {
 
 /* #region Header */
 
+/* #region Navbar */
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle::after {
+    border: none;
+    font: var(--fa-font-solid);
+    content: "\f107";
+}
+
+.dropdown-toggle.show::after {
+    content: "\f106";
+}
+
+
+
+/* #endregion Navbar */
 
 
 /* #endregion Header */
@@ -169,6 +196,24 @@ img {
 
 .border_radius {
     border-radius: 2rem;
+}
+
+.m-jumbotron {
+    background-image: url("./../img/jumbo-bg.png");
+    background-color: #cccccc;
+   /*  height: 500px; */
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+}
+
+.m-jumbotron .btn {
+    background-color: var(--btn-secondary);
+}
+
+.here_ps5>.no_limits {
+    color: var(--text-light-blue);
 }
 
 /* #endregion Main */
