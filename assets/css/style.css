@@ -1,10 +1,12 @@
 
 :root {
     --bg-darkest: black;
-    --bg-darker: rgb(1, 1, 122);
+    --bg-darker: rgb(0, 0, 80);
     --bg-dark: rgb(141, 140, 140);
     --bg-light: rgb(173, 171, 171);
+    --bg-lighter: rgb(204, 200, 200);
     --bg-lightest: white;
+    --bg-footer: rgb(46, 46, 189);
     --text-light-blue: rgb(30, 130, 245);
     --btn-primary: rgb(0, 66, 248);
     --btn-secondary: rgb(255, 60, 25);
@@ -27,13 +29,29 @@ img {
 ul {
     list-style: none;
 }
-
-
-
 /* #endregion Commons */
 
 /* #region Utility */
 
+.bg_light {
+    background-color: var(--bg-light);
+}
+
+.bg_lighter {
+    background-color: var(--bg-lighter);
+}
+
+.text_btn_secondary {
+    color: var(--text-light-blue);
+}
+
+.bg_darker {
+    background-color: var(--bg-darker);
+}
+
+.bg_footer {
+    background-color: var(--bg-footer) ;
+}
 /* #endregion Utility */
 
 /* #region Debug */
@@ -62,117 +80,9 @@ ul {
     border: 1px solid white;
 }
 
-/* .debug .show2 {
-    height: 200px;
-    background-color: blue;
-} */
-
-/* .debug .show3 {
-    height: 950px;
-    background-color: brown;
-} */
-
-/* .debug .show4 {
-    height: 200px;
-} */
-
-/* .debug .show5 {
-    height: 400px;
-} */
-
-/*.debug .show6 {
-     height: 150px;
-    background-color: chartreuse;
-}  */
-
-/* .debug .itt {
-    height: 600px;
-    background-color: red;
-} */
-
-/* .debug .new-releases {
-    height: 700px;
-    background-color: rgb(39, 38, 38);
-} */
-
-/* .debug .show7 {
-    height: 100px;
-    background-color: blueviolet;
-    border: 1px solid white;
-} */
-
-/* .debug .play_explore {
-    height: 200px;
-    background-color: rgb(47, 10, 82);
-} */
-
-/* .debug .show8 {
-    height: 300px;
-    background-color: coral;
-    border: 1px solid white;
-} */
-
-/* .debug .playstation_plus {
-    height: 300px;
-    background-color: gray;
-} */
-
-/* .debug .discounts {
-    height: 300px;
-    background-color: lightgray;
-} */
-
-/* .debug .offers {
-    height: 900px;
-    background-color: black;
-} */
-
-/* .debug .show9 {
-    height: 250px;
-    background-color: yellow;
-    border: 1px solid white;
-} */
-
-/* .debug .playstation_now{
-    height: 350px;
-    background-color: blue;
-} */
-
-/* .debug .social_follow{
-    height: 250px;
-    background-color: yellowgreen;
-} */
-
-/* .debug .show10 {
-    height: 150px;
-    background-color: magenta;
-    border: 1px solid white;
-} */
-
- .debug .ps_f-section{
-   /*  height: 950px; */
-    background-color: rgb(44, 44, 224);
-}
-
-/*
-
-.debug .show11a {
-    height: 150px;
-    background-color: magenta;
-    border: 1px solid white;
-}
-
-.debug .show11b {
-    height: 600px;
-    background-color: magenta;
-    border: 1px solid white;
-} */
-
-
 /* #endregion Debug */
 
 /* #region Header */
-
 /* #region Navbar */
 
 .dropdown-toggle {
@@ -190,11 +100,22 @@ ul {
     content: "\f106";
 }
 
+.styled {
+    list-style: disc;
+}
+
+.a_unstyled {
+    text-decoration: none;
+    color: var(--text-dark);
+}
+
+.console:hover {
+    box-shadow: 0 0 5px #888888;
+}
+
 
 
 /* #endregion Navbar */
-
-
 /* #endregion Header */
 
 /* #region Main*/
@@ -281,9 +202,43 @@ ul {
     flex-direction: column;
 }
 
+.display_none {
+    display: none;
+}
+
 /* #endregion Main */
 
 /* #region Footer */
-
 /* #endregion Footer */
+
+/* #region Media */
+
+/* md */
+
+@media screen and (min-width: 768px) {
+    .playstation_plus .display_none {
+        display: inline-block;
+    }   
+    
+    .playstation_now .display_none {
+        display: inline-block;
+    }  
+
+    #site_main .text_game {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+   .m-social .show10>img {
+       width: 200px;
+   }
+}
+
+
+
+
+
+
+/* #endregion Media */
 
