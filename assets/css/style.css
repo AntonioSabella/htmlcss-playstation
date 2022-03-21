@@ -55,6 +55,10 @@ ul {
 .btn:hover {
     box-shadow: inset 0 0 10px white, inset 0 0 10px white, inset 0 0 10px white;
 }
+
+.playstation_now .btn:hover {
+    box-shadow: inset 0 0 10px black, inset 0 0 10px black, inset 0 0 10px black;
+}
 /* #endregion Utility */
 
 /* #region Debug */
@@ -227,6 +231,9 @@ p.text_black {
     background-color: var(--btn-secondary);
 }
 
+.sup {
+    vertical-align: super;
+}
 .new-releases .card {
     background-color: transparent; 
     border: none;  
