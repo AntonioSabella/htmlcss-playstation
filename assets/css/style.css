@@ -80,11 +80,10 @@ ul {
     height: 400px;
 } */
 
-.debug .show6 {
-   /*  height: 150px;
-    background-color: chartreuse; */
-    border-bottom: 3px solid var(--btn-primary); 
-}
+/*.debug .show6 {
+     height: 150px;
+    background-color: chartreuse;
+}  */
 
 /* .debug .itt {
     height: 600px;
@@ -201,7 +200,7 @@ ul {
 /* #region Main*/
 
 .border_radius {
-    border-radius: 2rem;
+    border-radius: 1.5rem;
 }
 
 .m-jumbotron {
@@ -218,12 +217,40 @@ ul {
     background-color: var(--btn-secondary);
 }
 
+.card {
+    border: none;
+}
+
+.m-slider .col {
+    transition: 1s;
+}
+
+.m-slider .col:hover .border_show {
+    border: 3px solid var(--text-light-blue);
+    position: relative;
+    bottom: 1rem;
+}
+
+.m-slider .col:hover .just_up {
+    position: relative;
+    bottom: 1rem;
+}
+
 .here_ps5>.no_limits {
     color: var(--text-light-blue);
 }
 
 .cp5_text>.btn {
     background-color: var(--btn-primary);
+}
+
+.opacity_border {
+    filter: opacity(50%);
+}
+
+.slider_ps5 .col:hover .opacity_border {
+    filter: none; 
+    border-bottom: 3px solid var(--text-light-blue); 
 }
 
 .itt {
@@ -233,6 +260,12 @@ ul {
     background-repeat: no-repeat;
     background-size: cover;
     flex-direction: column;
+}
+
+.itt h1,
+.itt p {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.2rem;
 }
 
 .itt .btn {
