@@ -13,7 +13,6 @@
     --text-darkest: black;
     --text-dark: rgb(141, 140, 140);
     --text-light: white;
-
 }
 
 /* #region Commons */
@@ -51,6 +50,10 @@ ul {
 
 .bg_footer {
     background-color: var(--bg-footer) ;
+}
+
+.btn:hover {
+    box-shadow: inset 0 0 10px white, inset 0 0 10px white, inset 0 0 10px white;
 }
 /* #endregion Utility */
 
@@ -127,7 +130,6 @@ ul {
 .m-jumbotron {
     background-image: url("./../img/jumbo-bg.png");
     background-color: #cccccc;
-   /*  height: 500px; */
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -143,18 +145,33 @@ ul {
 }
 
 .m-slider .col {
-    transition: 1s;
+    transition: 1.5s;
 }
 
 .m-slider .col:hover .border_show {
     border: 3px solid var(--text-light-blue);
-    position: relative;
-    bottom: 1rem;
 }
+
+
 
 .m-slider .col:hover .just_up {
     position: relative;
-    bottom: 1rem;
+    animation-name: jump-up;
+    animation-duration: 1.5s;
+}
+
+@keyframes jump-up {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 1rem;
+    }
+
+    100% {
+        bottom: 0;
+    }
 }
 
 .here_ps5>.no_limits {
@@ -165,14 +182,31 @@ ul {
     background-color: var(--btn-primary);
 }
 
-.opacity_border {
+.show6 {
+    flex-direction: column;
+}
+
+.opacity_none {
     filter: opacity(50%);
 }
 
-.slider_ps5 .col:hover .opacity_border {
+.slider_ps5 .col:hover .opacity_none {
     filter: none; 
-    border-bottom: 3px solid var(--text-light-blue); 
 }
+
+.slider_ps5 .col:hover {
+    border-bottom: 3px solid var(--text-light-blue);
+}
+
+.slider_ps5 .col:hover .text_black {
+    color: var(--text-darkest);
+    font-weight: 600;
+}
+
+p.text_black {
+    display: none;
+}
+ 
 
 .itt {
     background-image: url("./../img/it-takes-two-hero-banner-desktop.jpg");
@@ -225,9 +259,15 @@ ul {
     }  
 
     #site_main .text_game {
-        width: 50%;
+        width: 40%;
+    }
+
+    p.text_black {
+        display: block;
     }
 }
+
+/* lg */
 
 @media screen and (min-width: 992px) {
    .m-social .show10>img {
